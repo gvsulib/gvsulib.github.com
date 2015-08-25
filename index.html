@@ -1,96 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Document Delivery - University Libraries - Grand Valley State University</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="description" content="Course Reserve at the GVSU University Libraries brings course readings and materials in one place for easy access.">
+    <meta name="keywords" content="course reserve,course reserves,reserves,gvsu,grand valley,library, libraries,research tools">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="GVSU Library Labs : Software projects by the GVSU Systems &amp; Technology Folks" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>GVSU Library Labs</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gvsulib">View on GitHub</a>
-
-          <h1 id="project_title">GVSU Library Labs</h1>
-          <h2 id="project_tagline">Software projects by the GVSU Systems &amp; Technology Folks</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>What on earth is Library Labs?</h2>
-
-<p>We write a lot of software to help make research better for the students at Grand Valley State University. Here it is! I hope it's useful for your library, too. Have fun!</p>
-
-<h2>Goodies for you</h2>
-
-<p>Here are some of the projects we've released. </p>
-
-<h3><a href="https://github.com/gvsulib/Custom-Summon-Searches">Custom Summon Search Generator</a></h3>
-
-<p>A simple tool for generating scoped search forms in plain ol' HTML for Serial Solutions' Summon discovery platform. (We know that Serials Solutions has one, but it only works if you can include Javascript on your page. If you can't, then this tool is for you!)</p>
-
-<h3><a href="https://github.com/gvsulib/Summon-Stats">Summon Statistics</a></h3>
-
-<p>Serials Solutions Summon doesn't give you stats on how users click on results, which is more useful than what they search for. This script adds that feature.</p>
-
-<h3><a href="https://github.com/gvsulib/OPAC_Vs_Summon">OPAC versus Summon</a></h3>
-
-<p>Do a keyword search in Summon and Millennium's OPAC at the same time. Which is better? Only you can deicde!</p>
-
-<h3><a href="https://github.com/gvsulib/unbork_iii_webpac">Unbork Innovative Interfaces' OPAC</a></h3>
-
-<p>Patches the mysterious disappearing 'Request' button in III's horrible, horrible, awful OPAC: WebPAC Pro.</p>
-
-<h3><a href="https://github.com/gvsulib/360Link-Reset">360Link Reset</a></h3>
-
-<p>A jQuery script to radically improve Serials Solutions 360Link link resolver.</p>
-
-<h3><a href="https://github.com/gvsulib/EZlogin">EZLogin</a></h3>
-
-<p>Use EZProxy to log into home-grown systems if you don't have access to your University's CAS or LDAP system. Boom! You'll show them!</p>
-
-<h3><a href="https://github.com/gvsulib/UI-Patterns">GVSU Library User Interface Pattern Library</a></h3>
-
-<p>A live collection of all of the user interface patterns we use to quickly build and launch websites. You can see it live at <a href="http://gvsu.edu/library/ui">http://gvsu.edu/library/ui</a></p>
-
-<h3><a href="https://github.com/gvsulib/Today-s-Hours">Today's Hours</a></h3>
-
-<p>A simple script to display the current day's hours on any webpage. No database required!</p>
-
-<h3><a href="https://github.com/gvsulib/Illiad">Illiad - our radically customized site</a></h3>
-
-<p>Does your ILL department use Illiad? I'm sorry, so does ours. But we bent Illiad into (better) shape by redesigning not only the pages but the user workflow. Someday we'll tell you more about how we did it, but for now, have a look at the code.</p>
-
-<h3><a href="https://github.com/mreidsma/Ares">Ares - our radically customized site</a></h3>
-
-<p>If you insist on using Atlas Systems' Ares Course Reserve software, do yourself a favor and have a look at how we redesigned the student and instructor workflows. Your users will thank you!</p>
-
-<h3><a href="https://github.com/gvsulib/hasMedia-">hasMedia</a></h3>
-
-<p>A script to add HTML5 video and audio elements to CONTENTdm when your content is hosted on another server.</p>
-
-<hr><p>This is just a sampling of the stuff we build. If you want to see the whole firehose, visit our <a href="http://github.com/gvsulib">Github repository page</a>. Thanks for looking!</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="//labs.library.gvsu.edu/labs/360link-reset/css/styles.css" />
+  <link rel="search" type="application/opensearchdescription+xml" title="GVSU Libraries Search" href= "//labs.library.gvsu.edu/labs/search/gvsusummon.xml">
+  <link rel="search" type="application/opensearchdescription+xml" title="GVSU Libraries Catalog Search" href= "//labs.library.gvsu.edu/labs/search/gvsucatalog.xml">
+  <style>
+  .cms-chunk-inner h3 { text-align: center; margin: 1em 0;}
+  #cms-content h2 { border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
     
+  <div id="gvsu-cf_header" class="responsive">
+    <div id="gvsu-cf_header-inner">
+      <div id="gvsu-cf_header-logo">
+        <a href="http://gvsu.edu/">
+          <img src="//gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University">
+        </a>
+      </div><!-- End #gvsu-cf_header-logo -->
+    </div><!-- End #gvsu-cf_header-inner -->
+  </div><!-- End #gvsu-cf_header -->
 
-  </body>
+  <div id="cms-header-wrapper">
+    <div id="cms-header">
+      <div id="cms-header-inner">
+        <a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
+          <img src=" //gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu">
+        </a>
+        <h1>
+          <a href="http://gvsu.edu/library">University Libraries</a>
+        </h1>
+        <div id="library-search">
+          <form action="//gvsu.summon.serialssolutions.com/search">
+            <input type="hidden" name="spellcheck" value="true">
+            <p>
+              <input type="text" name="s.q" placeholder="Find articles, books, &amp; more" size="35">
+              <input type="submit" value="Find It!">
+            </p>
+          </form>
+        </div><!-- End #library-search -->
+          
+      <div class="cms-navigation" id="cms-navigation">
+        <ul>
+          <li><a href="http://gvsu.edu/library/find">Find Materials</a></li>
+          <li><a href="http://gvsu.edu/library/allservices">Services</a></li>
+          <li><a href="http://gvsu.edu/library/about">About Us</a></li>
+          <li><a href="http://help.library.gvsu.edu">Help</a></li>
+        </ul>
+      </div><!-- End #cms-navigation -->
+
+      <div class="cms-clear"></div>
+    
+      </div> <!-- End #cms-header-inner -->
+    </div><!-- End #cms-header -->
+  </div><!-- End #cms-header-wrapper -->
+
+  <div id="cms-body-wrapper">
+    <div id="cms-body">
+      <div id="cms-body-inner">
+        <div id="cms-body-table">
+          <div id="cms-content">
+
+          <div class="row">
+            <div class="span3 cms-chunk-html">
+            <div class="cms-chunk-inner">
+              <h1>GVSU Library Labs</h1>
+
+              <p>We write a lot of software to help make research better for the students at Grand Valley State University, and we share all our code to help other libraries and researhers.</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="span3 cms-chunk-html" id="featured">
+                        <div class="cms-chunk-inner">
+
+              <h2>Tools</h2>
+
+               <div style="text-align: center">
+
+                  <h3>GVSU Has? Bookmarklet</h3>
+
+                  <p><a href="javascript:setTimeout(%27x99.focus()%27,300)%3Bvar re%3D/(%5B%5C/-%5D%7Cis%5Bbs%5Dn%3D)(%5Cd%7B7,9%7D%5B%5CdX%5D)/i%3Bif(re.test(location.href)%3D%3Dtrue)%7Bvar isbn%3DRegExp.%242%3Bvar x99%3Dwindow.open(%27http://library.catalog.gvsu.edu%27%2B%27/search/i%3D%27%2Bisbn,%27LibraryLookup%27,%27scrollbars%3D1,resizable%3D1,top%3D0,left%3D0,location%3D1,width%3D800,height%3D600%27)%3Bx99.focus()%3B%7D" class="btn btn-primary btn-lg">GVSUHas?</a><br /><small style="color:#575757;">Drag this link to your bookmarks bar</small></p>
+
+                  <p><a href="https://mreidsma.github.io/bookmarklets/gvsuhas.html">Install this bookmarklet</a> in your bookmarks, and when you're on an Amazon book record page, click it. It will search the catalog for the book you're viewing. It was based on <a href="http://jonudell.net/LibraryLookupGenerator.html">John Udell's Library Lookup Generator</a>.</p>
+
+              </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="span1 cms-chunk-html">
+                          <div class="cms-chunk-inner">
+
+                <h3>GVSU Short Link Bookmarklet</h3>
+
+                <p style="text-align:center;"><a href="javascript:(function(){%20window.open('http://gvsu.edu/s/admin-url_edit_post.htm?url='+encodeURIComponent(location.href)+'&title='+document.title);%20})();" class="btn btn-primary">GVSU Shorten</a><br /><small style="color:#575757;">Drag this link to your bookmarks bar</small></p>
+
+                <p><a href="https://mreidsma.github.io/bookmarklets/installing.html">Install</a> this bookmarklet and GVSU Faculty &amp; Staff can create a GVSU short link for any page you are viewing by clicking it. You'll need to log in to the <a href="http://gvsu.edu/s">GVSU Short Link system</a> once per session.</p>
+
+</div>
+              </div>
+               <div class="span1 cms-chunk-html">
+                           <div class="cms-chunk-inner">
+
+                <h3>Custom Scoped Library Searches</h3>
+
+                <p style="text-align:center;"><a href="http://labs.library.gvsu.edu/scopedsummon" class="btn btn-default">Build a Scoped Search</a></p>
+
+                <p><a href="http://gvsu.summon.serialssolutions.com">The Library Search box</a> searches nearly all of our holdings by default. To create a more targeted search, use this tool to select limiters and you'll get HTML to insert into any website.</p>
+
+</div>
+              </div>
+               <div class="span1 cms-chunk-html">
+                           <div class="cms-chunk-inner">
+
+                <h3>Browser Search Tools</h3>
+
+                <p style="text-align: center;"><a href="javascript:installSearchEngine('http://labs.library.gvsu.edu/labs/search/gvsusummon.xml' )" title="Install Library Search in your browser" class="btn btn-default">Install Library Search</a></p>
+
+                <p style="text-align: center;"><a href="javascript:installSearchEngine('http://labs.library.gvsu.edu/labs/search/gvsusummon.xml' )" title="Install Library Catalog Search in your browser" class="btn btn-default">Install Library Catalog Search</a></p>
+
+                <p>Search the Library or the Library Catalog right from your browser's search bar with these browser Search Engine plugins.</p>
+
+</div>
+              </div>
+              <div class="cms-clear"></div>
+            </div>
+
+            <h2>Code</h2>
+
+                <div class="row">
+              <div class="span1 cms-chunk-html">
+                          <div class="cms-chunk-inner">
+
+                  <h3>Library Status Page</h3>
+
+                  <p><a href="img/status.png"><img src="img/status.png" alt="Screenshot of Library Status Page" /></a></p>
+
+                  <p>Library Status is an online tool for publicly displaying the current status of your library systems.</p>
+
+                  <p><a href="https://github.com/gvsulib/library-Status" class="btn btn-default btn-sm">View Code on Github</a></p>
+</div>
+              </div>
+               <div class="span1 cms-chunk-html">
+                           <div class="cms-chunk-inner">
+
+                <h3>360Link Reset</h3>
+
+                  <p><img src="img/360link.png" alt="Screenshot of 360Link reset" /></p>
+
+                  <p>360Link Reset is a tool to radically improve Serials Solutions 360Link 1.0 Link Resolver</p>
+
+                  <p><a href="https://github.com/gvsulib/360Link-Reset" class="btn btn-default btn-sm">View Code on Github</a></p>
+
+</div>
+              </div>
+               <div class="span1 cms-chunk-html">
+                           <div class="cms-chunk-inner">
+
+<h3>Custom Illiad</h3>
+
+                  <p><img src="img/illiad.png" alt="Screenshot of Customized Illiad" /></p>
+
+                  <p>We've heavilty customized not just the look, but also the interactions, for OCLC's ILL client.</p>
+
+                  <p><a href="https://github.com/gvsulib/Illiad" class="btn btn-default btn-sm">View Code on Github</a></p>
+
+</div>
+              </div>
+                            <div class="cms-clear"></div>
+
+            </div>
+            <div class="row">
+                <div class="span3 cms-chunk-html">
+                            <div class="cms-chunk-inner">
+
+                <p><a href="http://github.com/gvsulib">View All Our Code on Github</a></p>
+                </div>
+                              <div class="cms-clear"></div>
+
+                </div>
+            </div>
+            <div class="cms-clear"></div>
+            <div id="cms-content-footer">
+              <div>
+              
+            
+              <a href="http://labs.library.gvsu.edu/status/?problem" class="cms-report-problem">report a problem with this page</a>
+            
+            </div>
+                    </div>
+              </div><!-- End #cms-content -->
+        </div><!-- End #cms-body-table -->
+      </div><!-- End #cms-body-inner -->
+    </div><!-- end #cms-body -->
+  </div><!-- end #cms-body-wrapper -->
+
+  <div id="cms-footer-wrapper">
+    <div id="cms-footer">
+      <div id="cms-footer-inner">
+        <ul>
+          <li><h4>Contact</h4>
+            <p class="vcard">
+              <span class="tel"> 
+                <span class="type">Phone</span>:
+                <span class="value">(616) 331-3500</span>
+              </span>
+              <br />
+              <a href="mailto:library@gvsu.edu" class="email" target="_blank">library@gvsu.edu</a>
+              <br />
+            </p>
+          </li>
+          <li><h4>Social Media</h4>
+            <p>
+              <a href="http://twitter.com/gvsulib" title="http://twitter.com/gvsulib" class="socialmedia-icon socialmedia-icon-twitter">
+                <span class="cms-screen-reader">http://twitter.com/gvsulib</span>
+              </a>
+              <a href="http://youtube.com/user/gvsulib" title="http://youtube.com/user/gvsulib" class="socialmedia-icon socialmedia-icon-youtube">
+                <span class="cms-screen-reader">http://youtube.com/user/gvsulib</span>
+              </a>
+            </p>
+          </li>
+          <li id="library-fdlp">
+                <p>
+                  <a href="http://gvsu.edu/library/govdoc" target="_blank">
+                    <img src="//gvsu.edu/cms4/asset/0862059E-9024-5893-1B5AAAC2F83BDDD8/fdlp-new.png" alt="Federal Depository Library Program Logo">
+                  </a>
+                  <br>
+                  Federal Depository<br>
+                  Library Program
+                </p>
+              </li>
+        </ul>
+      </div><!-- End #cms-footer-inner -->
+    </div><!-- End #cms-footer -->
+  </div><!-- End #cms-footer-wrapper -->
+
+  <div id="cms-copyright-wrapper">
+    <div id="cms-copyright">
+      <div id="cms-copyright-inner">
+        <ul>
+          <li><a href="http://gvsu.edu/affirmativeactionstatement.htm">GVSU is an EO/AA Institutio</a></li>
+          <li><a href="http://gvsu.edu/privacystatement.htm">Privacy Policy</a></li>
+          <li><a href="http://gvsu.edu/disclosures">Disclosures</a></li>
+          <li>Copyright © 1995-2015 GVSU</li>
+        </ul>
+      </div><!-- End #cms-copyright-inner -->
+    </div><!-- End #cms-copyright -->
+  </div><!-- End #cms-copyright-wrapper -->
+
+  <!-- Special div custom to Illiad -->
+  <div id="renewalHack" style="display: none;"></div>
+
+  <script src="//labs.library.gvsu.edu/labs/chatbutton/chatbutton.js"></script>
+  <script src="//gvsu.edu/cms4/skeleton/0/files/js/cms4.0.min.js"></script>
+  <script>cmsInit()</script>
+
+</body>
 </html>
