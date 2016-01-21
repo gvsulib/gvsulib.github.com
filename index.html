@@ -114,11 +114,17 @@
                <div class="span1 cms-chunk-html">
                            <div class="cms-chunk-inner">
 
-                <h3>Custom Scoped Library Searches</h3>
+                <!--h3>Custom Scoped Library Searches</h3>
 
                 <p style="text-align:center;"><a href="http://labs.library.gvsu.edu/scopedsummon" class="btn btn-default">Build a Scoped Search</a></p>
 
-                <p><a href="http://gvsu.summon.serialssolutions.com">The Library Search box</a> searches nearly all of our holdings by default. To create a more targeted search, use this tool to select limiters and you'll get HTML to insert into any website.</p>
+                <p><a href="http://gvsu.summon.serialssolutions.com">The Library Search box</a> searches nearly all of our holdings by default. To create a more targeted search, use this tool to select limiters and you'll get HTML to insert into any website.</p-->
+
+                <h3>EZProxy Test Bookmarklet</h3>
+
+                <p style="text-align:center;"><a href="javascript:!function(){if('cas.gvsu.edu'==window.location.host){var o=window.location.search;console.log(o);var s=o.replace('ezproxy','ezproxy-test');window.location.assign('https://cas-test.gvsu.edu/auth/login'+s)}}();" class="btn btn-primary">EZProxy Test</a><br /><small style="color:#575757;">Drag this link to your bookmarks bar</small></p>
+
+                <p><a href="https://mreidsma.github.io/bookmarklets/installing.html">Install</a> this bookmarklet so you can test the new EZProxy Test server with our databases. From off-campus, click on a database from our database list. When you get to the GVSU CAS login screen, click this bookmarklet and it will refresh the login page to direct you through the new EZProxy server.</p>
 
 </div>
               </div>
