@@ -62,13 +62,19 @@
               </a>
             </h1>
             <h2 class="sr-only">Search</h2>
-            <form action="https://gvsu.summon.serialssolutions.com/search" class="library-search" role="search">
-              <input name="spellcheck" value="true" type="hidden">
+            <form action="https://search.ebscohost.com/login.aspx" method="get" class="library-search" role="search">
+              <input name="direct" type="hidden" value="true">
+              <input type="hidden" name="custid" value="s8484662"> 
+              <input name="scope" type="hidden" value="site"> 
+              <input name="site" type="hidden" value="eds-live"> 
+               <input name="profid" type="hidden" value="eds">
+              <input name="groupid" type="hidden" value="main">
+              <input name="authtype" type="hidden" value="ip,guest">
               <p>
                 <label for="s.q" class="sr-only">
                   Search the Library for Articles, Books, and More
                 </label>
-                <input id="s.q" name="s.q" placeholder="Find articles, books, &amp; more" size="45" type="text"><button type="submit">Find It!</button>
+                <input type="text" id="s.q" name="bquery" placeholder="Find articles, books, &amp; more" size="45"><button type="submit">Find It!</button>
               </p>
             </form>
             <div class="library-nav">
@@ -198,7 +204,7 @@
 
 </div>
               </div>
-              
+              </div>
            
              <div class="col-3 col-md-6 col-sm-12 cms-chunk-html">
                            <div class="cms-chunk-inner">
@@ -212,18 +218,8 @@
 
                            </div>
               </div>
-               <div class="col-3 col-md-6 col-sm-12 cms-chunk-html">
-                           <div class="cms-chunk-inner">
-
-                <h3>Custom Scoped Library Searches</h3>
-
-                <p style="text-align:center;"><a href="https://prod.library.gvsu.edu/scopedsummon" class="btn btn-default">Build a Scoped Search</a></p>
-
-                <p><a href="https://gvsu.summon.serialssolutions.com">The Library Search box</a> searches nearly all of our holdings by default. To create a more targeted search, use this tool to select limiters and you'll get HTML to insert into any website.</p>
-
-
-</div>
-              </div>
+               
+             
  <div class="col-3 col-md-6 col-sm-12 cms-chunk-html">
                            <div class="cms-chunk-inner">
  <h3>EZProxy Test Bookmarklet</h3>
@@ -236,12 +232,12 @@
                            </div>
               </div>
 
-
+ </div>
               </div>
                             <div class="cms-clear"></div>
 
 
-            <h2>Code</h2>
+            <!--h2>Code</h2>
 
                 <div class="row row-gutter">
               <div class="col-4 col-sm-12 cms-chunk-html">
@@ -295,12 +291,12 @@
                               <hr />
 
                 </div>
-            </div>
+            </div-->
 
              <div class="row">
 
 
-            <div class="col-4 col-sm-12 cms-chunk-html">
+            <div class="col-6 col-sm-12 cms-chunk-html">
 <div class="cms-chunk-inner">
               <h3>Chat Now</h3>
 
@@ -309,13 +305,13 @@
               <p><a href="https://prod.library.gvsu.edu/labs/chat" class="btn btn-default">Ask a Question</a></p>
 </div>
             </div>
-            <div class="col-4 col-sm-12 cms-chunk-html">
+            <div class="col-6 col-sm-12 cms-chunk-html">
 <div class="cms-chunk-inner">
               <h3>Report a Problem</h3>
 
               <p>Find a problem on a library website or system? Report it through the Library Systems' Status tool.</p>
 
-              <p><a href="http://labs.library.gvsu.edu/status/?problem" class="btn btn-default">Report a Problem</a></p>
+              <p><a href="https://gvsu.edu/library/support" class="btn btn-default">Report a Problem</a></p>
 </div>
             </div>
             <div class="col-4 col-sm-12 cms-chunk-html">
@@ -341,16 +337,13 @@
         </div>
         <div class="col-6 text-right">
           
-            <a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem">Report a problem with this page</a>
-          
+           <div id="s-la-widget-9529"></div>
+<script src="https://api2.libanswers.com/1.0/widgets/9529"></script>
+        </div>
         </div>
       </div>
     
       </div>
-              <script>
-                var thisUrl = encodeURI(window.location);
-                document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
-              </script> 
 
       </div>
   </div>
@@ -465,7 +458,7 @@
               <a href="https://gvsu.edu/disclosures">Disclosures</a>
             </li>
             <li>
-              <span class="hide-sm hide-md">Copyright </span>© 2018 GVSU
+              <span class="hide-sm hide-md">Copyright </span>© 2021 GVSU
             </li>
           </ul>
         </div>
