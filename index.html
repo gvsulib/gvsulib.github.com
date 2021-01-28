@@ -62,8 +62,10 @@
               </a>
             </h1>
             <h2 class="sr-only">Search</h2>
-            <form action="https://search.ebscohost.com/login.aspx" method="get" class="library-search" role="search">
+            <form action="https://searchbox.ebsco.com/search/" method="get" class="library-search" role="search">
               <input name="direct" type="hidden" value="true">
+<input name="schemaId" value="search" type="hidden" />
+<input name="proxy" value="http://ezproxy.gvsu.edu/login?url={targetURL}" type="hidden" />
               <input type="hidden" name="custid" value="s8484662"> 
               <input name="scope" type="hidden" value="site"> 
               <input name="site" type="hidden" value="eds-live"> 
